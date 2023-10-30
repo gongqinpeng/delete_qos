@@ -1,0 +1,153 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"include"
+		],
+		"files" : 
+		[
+			"src/core/cdr/CMakeLists.txt",
+			"src/core/CMakeLists.txt",
+			"src/core/ddsi/CMakeLists.txt",
+			"src/core/ddsc/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 69,
+				"parent" : 0
+			},
+			{
+				"file" : 0,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 25,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 70,
+				"parent" : 0
+			},
+			{
+				"file" : 2,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 294,
+				"parent" : 5
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 71,
+				"parent" : 0
+			},
+			{
+				"file" : 3,
+				"parent" : 7
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 133,
+				"parent" : 8
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 127,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 3,
+			"component" : "dev",
+			"destination" : "include",
+			"paths" : 
+			[
+				{
+					"from" : "src/core/cdr/include",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "dev",
+			"destination" : "include",
+			"paths" : 
+			[
+				{
+					"from" : "src/core/ddsi/include",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 9,
+			"component" : "dev",
+			"destination" : "include",
+			"paths" : 
+			[
+				{
+					"from" : "src/core/ddsc/include",
+					"to" : "."
+				},
+				{
+					"from" : "cmake-build-debug/src/core/include",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 10,
+			"component" : "lib",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libddsc.dll.a"
+			],
+			"targetId" : "ddsc::@0618756b1ff51bca1a0e",
+			"targetIndex" : 5,
+			"targetIsImportLibrary" : true,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 10,
+			"component" : "lib",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"bin/ddsc.dll"
+			],
+			"targetId" : "ddsc::@0618756b1ff51bca1a0e",
+			"targetIndex" : 5,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src/core",
+		"source" : "src/core"
+	}
+}

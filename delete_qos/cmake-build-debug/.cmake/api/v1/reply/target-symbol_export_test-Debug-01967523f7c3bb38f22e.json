@@ -1,0 +1,423 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "bin/symbol_export_test.exe"
+		},
+		{
+			"path" : "bin/symbol_export_test.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries",
+			"add_compile_options",
+			"add_definitions",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"src/core/xtests/symbol_export/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 13,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 15,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 136,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 142,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 287,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 286,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 288,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 29,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wconversion"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wmissing-prototypes"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-fdiagnostics-color=always"
+				},
+				{
+					"fragment" : "-std=gnu99"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 6,
+					"define" : "NTDDI_VERSION=NTDDI_WIN7"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "_WIN32_WINNT=_WIN32_WINNT_WIN7"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "__USE_MINGW_ANSI_STDIO=1"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 9,
+					"path" : "C:/Users/Administrator/CLionProjects/delete_data_qos/src/ddsrt/include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "C:/Users/Administrator/CLionProjects/delete_data_qos/src/ddsrt/src"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/src/ddsrt/include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/src/include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "C:/Users/Administrator/CLionProjects/delete_data_qos/src/core/xtests/symbol_export/../../ddsc/src"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "C:/Users/Administrator/CLionProjects/delete_data_qos/src/core/xtests/symbol_export/../../ddsi/include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "C:/Users/Administrator/CLionProjects/delete_data_qos/src/core/xtests/symbol_export/../../cdr/include"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "C:/Users/Administrator/CLionProjects/delete_data_qos/src/security/api/include"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/src/security/api/include"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "C:/Users/Administrator/CLionProjects/delete_data_qos/src/security/api/../../core/ddsi/include"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "C:/Users/Administrator/CLionProjects/delete_data_qos/src/security/api/../../core/cdr/include"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "C:/Users/Administrator/CLionProjects/delete_data_qos/src/security/core/include"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "C:/Users/Administrator/CLionProjects/delete_data_qos/src/security/core/../api/include"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/src/core"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/src/core/include"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "C:/Users/Administrator/CLionProjects/delete_data_qos/src/core/ddsc/include"
+				}
+			],
+			"language" : "C",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "99"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "ddsc::@0618756b1ff51bca1a0e"
+		}
+	],
+	"id" : "symbol_export_test::@c6452e5796c573db0a2f",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "lib\\libddsc.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"role" : "libraries"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "symbol_export_test",
+	"nameOnDisk" : "symbol_export_test.exe",
+	"paths" : 
+	{
+		"build" : "src/core/xtests/symbol_export",
+		"source" : "src/core/xtests/symbol_export"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/xtests/symbol_export/symbol_export.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/core/ddsc/include/dds/dds.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/core/ddsc/include/dds/ddsc/dds_public_error.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/core/ddsc/include/dds/ddsc/dds_public_impl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/core/ddsc/include/dds/ddsc/dds_public_listener.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/core/ddsc/include/dds/ddsc/dds_public_qos.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/core/ddsc/include/dds/ddsc/dds_public_qosdefs.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/core/ddsc/include/dds/ddsc/dds_public_status.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/core/ddsc/include/dds/ddsc/dds_statistics.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/core/ddsc/include/dds/ddsc/dds_rhc.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/core/ddsc/include/dds/ddsc/dds_internal_api.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/core/ddsc/include/dds/ddsc/dds_opcodes.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/core/ddsc/include/dds/ddsc/dds_data_allocator.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/core/ddsc/include/dds/ddsc/dds_loan_api.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/core/ddsc/include/dds/ddsc/dds_public_dynamic_type.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "cmake-build-debug/src/core/include/dds/export.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"path" : "src/security/api/include/dds/security/dds_security_api.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"path" : "src/security/api/include/dds/security/dds_security_api_access_control.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"path" : "src/security/api/include/dds/security/dds_security_api_authentication.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"path" : "src/security/api/include/dds/security/dds_security_api_cryptography.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"path" : "src/security/api/include/dds/security/dds_security_api_defs.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"path" : "src/security/api/include/dds/security/dds_security_api_err.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"path" : "src/security/api/include/dds/security/dds_security_api_types.h",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "EXECUTABLE"
+}

@@ -1,0 +1,3115 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "bin/ddsc.dll"
+		},
+		{
+			"path" : "lib/libddsc.dll.a"
+		},
+		{
+			"path" : "bin/ddsc.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"install",
+			"target_link_libraries",
+			"add_dependencies",
+			"include",
+			"add_compile_options",
+			"add_definitions",
+			"target_include_directories",
+			"target_sources"
+		],
+		"files" : 
+		[
+			"src/core/CMakeLists.txt",
+			"src/core/ddsi/CMakeLists.txt",
+			"CMakeLists.txt",
+			"src/core/cdr/CMakeLists.txt",
+			"src/core/ddsc/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 15,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 127,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 31,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 70,
+				"parent" : 0
+			},
+			{
+				"file" : 1,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 291,
+				"parent" : 5
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 136,
+				"parent" : 7
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 142,
+				"parent" : 7
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 287,
+				"parent" : 7
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 286,
+				"parent" : 7
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 288,
+				"parent" : 7
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 60,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 69,
+				"parent" : 0
+			},
+			{
+				"file" : 3,
+				"parent" : 14
+			},
+			{
+				"command" : 7,
+				"file" : 3,
+				"line" : 23,
+				"parent" : 15
+			},
+			{
+				"command" : 7,
+				"file" : 1,
+				"line" : 292,
+				"parent" : 5
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 71,
+				"parent" : 0
+			},
+			{
+				"file" : 4,
+				"parent" : 18
+			},
+			{
+				"command" : 7,
+				"file" : 4,
+				"line" : 123,
+				"parent" : 19
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 78,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 59,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 3,
+				"line" : 22,
+				"parent" : 15
+			},
+			{
+				"command" : 8,
+				"file" : 1,
+				"line" : 290,
+				"parent" : 5
+			},
+			{
+				"command" : 8,
+				"file" : 4,
+				"line" : 115,
+				"parent" : 19
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 74,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -fvisibility=hidden"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wconversion"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wmissing-prototypes"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-fdiagnostics-color=always"
+				},
+				{
+					"fragment" : "-std=gnu99"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 10,
+					"define" : "NTDDI_VERSION=NTDDI_WIN7"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "_WIN32_WINNT=_WIN32_WINNT_WIN7"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "__USE_MINGW_ANSI_STDIO=1"
+				},
+				{
+					"define" : "ddsc_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 13,
+					"path" : "C:/Users/Administrator/CLionProjects/delete_data_qos/src/security/api/include"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/src/security/api/include"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "C:/Users/Administrator/CLionProjects/delete_data_qos/src/security/api/../../core/ddsi/include"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "C:/Users/Administrator/CLionProjects/delete_data_qos/src/security/api/../../core/cdr/include"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "C:/Users/Administrator/CLionProjects/delete_data_qos/src/core/cdr/include"
+				},
+				{
+					"backtrace" : 17,
+					"path" : "C:/Users/Administrator/CLionProjects/delete_data_qos/src/core/ddsi/include"
+				},
+				{
+					"backtrace" : 20,
+					"path" : "C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/src/core"
+				},
+				{
+					"backtrace" : 20,
+					"path" : "C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/src/core/include"
+				},
+				{
+					"backtrace" : 20,
+					"path" : "C:/Users/Administrator/CLionProjects/delete_data_qos/src/core/ddsc/include"
+				},
+				{
+					"backtrace" : 20,
+					"path" : "C:/Users/Administrator/CLionProjects/delete_data_qos/src/core/ddsc/src"
+				},
+				{
+					"backtrace" : 21,
+					"path" : "C:/Users/Administrator/CLionProjects/delete_data_qos/src/ddsrt/include"
+				},
+				{
+					"backtrace" : 21,
+					"path" : "C:/Users/Administrator/CLionProjects/delete_data_qos/src/ddsrt/src"
+				},
+				{
+					"backtrace" : 21,
+					"path" : "C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/src/ddsrt/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "C:/Users/Administrator/CLionProjects/delete_data_qos/src/security/core/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "C:/Users/Administrator/CLionProjects/delete_data_qos/src/security/core/../api/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "E:/anaconda/Library/include"
+				}
+			],
+			"language" : "C",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "99"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				222,
+				223,
+				224,
+				225,
+				226,
+				227,
+				228,
+				229,
+				230,
+				231,
+				232,
+				233,
+				234,
+				235,
+				236,
+				237,
+				238,
+				239,
+				240,
+				241,
+				242,
+				243,
+				244,
+				245,
+				246,
+				247,
+				248,
+				249,
+				250,
+				251,
+				252,
+				253,
+				254,
+				255,
+				256,
+				297,
+				298,
+				299,
+				300,
+				301,
+				302,
+				357,
+				358,
+				359,
+				360,
+				361,
+				362,
+				363,
+				364,
+				365,
+				366,
+				367,
+				368,
+				369,
+				370,
+				371,
+				372,
+				373,
+				374,
+				375,
+				376,
+				377,
+				378,
+				379,
+				380,
+				381,
+				382,
+				383,
+				384,
+				385,
+				386,
+				387,
+				388,
+				389,
+				390,
+				391,
+				392,
+				393,
+				394
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 6,
+			"id" : "_confgen::@86bd84294e37de3b26dd"
+		}
+	],
+	"id" : "ddsc::@0618756b1ff51bca1a0e",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "lib"
+			},
+			{
+				"backtrace" : 2,
+				"path" : "bin"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "C:/Program Files (x86)/CycloneDDS"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "E:\\anaconda\\Library\\lib\\libssl.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "E:\\anaconda\\Library\\lib\\libcrypto.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lws2_32",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-liphlpapi",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lbcrypt",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"role" : "libraries"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "ddsc",
+	"nameOnDisk" : "ddsc.dll",
+	"paths" : 
+	{
+		"build" : "src/core",
+		"source" : "src/core"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				222,
+				223,
+				224,
+				225,
+				226,
+				227,
+				228,
+				229,
+				230,
+				231,
+				232,
+				233,
+				234,
+				235,
+				236,
+				237,
+				238,
+				239,
+				240,
+				241,
+				242,
+				243,
+				244,
+				245,
+				246,
+				247,
+				248,
+				249,
+				250,
+				251,
+				252,
+				253,
+				254,
+				255,
+				256,
+				297,
+				298,
+				299,
+				300,
+				301,
+				302,
+				357,
+				358,
+				359,
+				360,
+				361,
+				362,
+				363,
+				364,
+				365,
+				366,
+				367,
+				368,
+				369,
+				370,
+				371,
+				372,
+				373,
+				374,
+				375,
+				376,
+				377,
+				378,
+				379,
+				380,
+				381,
+				382,
+				383,
+				384,
+				385,
+				386,
+				387,
+				388,
+				389,
+				390,
+				391,
+				392,
+				393,
+				394
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				1,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				144,
+				145,
+				146,
+				147,
+				148,
+				149,
+				150,
+				151,
+				152,
+				153,
+				154,
+				155,
+				156,
+				157,
+				158,
+				159,
+				160,
+				161,
+				162,
+				163,
+				164,
+				165,
+				166,
+				167,
+				168,
+				169,
+				170,
+				171,
+				172,
+				173,
+				174,
+				175,
+				176,
+				177,
+				178,
+				179,
+				180,
+				181,
+				182,
+				183,
+				184,
+				185,
+				186,
+				187,
+				188,
+				189,
+				190,
+				191,
+				192,
+				193,
+				194,
+				195,
+				196,
+				197,
+				198,
+				199,
+				200,
+				201,
+				202,
+				203,
+				204,
+				205,
+				206,
+				207,
+				208,
+				209,
+				210,
+				211,
+				212,
+				213,
+				214,
+				215,
+				216,
+				217,
+				218,
+				219,
+				220,
+				221,
+				257,
+				258,
+				259,
+				260,
+				261,
+				262,
+				263,
+				264,
+				265,
+				266,
+				267,
+				268,
+				269,
+				270,
+				271,
+				272,
+				273,
+				274,
+				275,
+				276,
+				277,
+				278,
+				279,
+				280,
+				281,
+				282,
+				283,
+				284,
+				285,
+				286,
+				287,
+				288,
+				289,
+				290,
+				291,
+				292,
+				293,
+				294,
+				295,
+				296,
+				303,
+				304,
+				305,
+				306,
+				307,
+				308,
+				309,
+				310,
+				311,
+				312,
+				313,
+				314,
+				315,
+				316,
+				317,
+				318,
+				319,
+				320,
+				321,
+				322,
+				323,
+				324,
+				325,
+				326,
+				327,
+				328,
+				329,
+				330,
+				331,
+				332,
+				333,
+				334,
+				335,
+				336,
+				337,
+				338,
+				339,
+				340,
+				341,
+				342,
+				343,
+				344,
+				345,
+				346,
+				347,
+				348,
+				349,
+				350,
+				351,
+				352,
+				353,
+				354,
+				355,
+				356
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 23,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/cdr/src/dds_cdrstream.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 23,
+			"path" : "src/core/cdr/include/dds/cdr/dds_cdrstream.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_eth.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_ssl.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_tcp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_tran.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_udp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_raweth.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_vnet.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_ipaddr.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_mcgroup.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_nwpart.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_security_util.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_security_omg.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_portmapping.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_handshake.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_serdata.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_serdata_cdr.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_serdata_pserop.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_serdata_plist.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_sertype.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_sertype_cdr.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_sertype_pserop.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_sertype_plist.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_statistics.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_iid.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_tkmap.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_vendor.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_threadmon.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_rhc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_pmd.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_entity_index.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_deadline.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_deliver_locally.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_plist.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_config.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_time.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_ownip.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_acknack.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_list_genptr.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_wraddrset.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_typelib.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_entity.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_endpoint_match.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_participant.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_proxy_participant.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_topic.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_endpoint.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_proxy_endpoint.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_gc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_addrset.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_bitset.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_guid.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_bswap.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_discovery.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_discovery_addrset.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_discovery_spdp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_discovery_endpoint.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_debmon.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_init.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_lat_estim.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_lease.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_misc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_pcap.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_qosmatch.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_radmin.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_receive.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_sockwaitset.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_sysdeps.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_thread.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_transmit.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_inverse_uint32_set.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_whc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_xevent.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_xmsg.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_freelist.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_hbcontrol.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_lifespan.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_discovery_topic.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_xt_typeinfo.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_xt_typelookup.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_xt_typemap.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_typelookup.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_typewrap.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_typebuilder.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_dynamic_type.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_security_msg.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/src/ddsi_security_exchange.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsi/defconfig.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__acknack.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__cfgunits.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__cfgelems.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__config_impl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__deliver_locally.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__endpoint.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__entity_index.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__endpoint_match.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__entity.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__gc.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__handshake.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__ipaddr.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__list_tmpl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__list_genptr.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__mcgroup.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__nwpart.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__ownip.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__participant.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__plist_context_kind.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__plist_generic.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__serdata_pserop.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__pmd.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__plist.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__portmapping.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__proxy_endpoint.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__proxy_participant.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__raweth.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__rhc.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__security_omg.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__security_util.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__serdata_cdr.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__serdata_plist.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__ssl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__sysdeps.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__tcp.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__protocol.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__time.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__topic.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__tran.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__typelib.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__udp.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__vendor.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__vnet.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__wraddrset.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__xqos.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__addrset.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__bitset.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__bswap.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__discovery.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__discovery_addrset.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__discovery_spdp.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__discovery_endpoint.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__debmon.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__hbcontrol.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__inverse_uint32_set.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__lat_estim.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__lease.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__misc.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__pcap.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__radmin.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__receive.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__sockwaitset.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__thread.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__transmit.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__whc.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__xevent.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__xmsg.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__log.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__discovery_topic.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__xt_impl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__typelookup.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__dynamic_type.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__security_msg.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/src/ddsi__security_exchange.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_tran.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_locator.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_security_omg.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_portmapping.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_serdata.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_sertype.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_statistics.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_iid.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_tkmap.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_threadmon.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_builtin_topic_if.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_rhc.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_guid.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_keyhash.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_entity_index.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_deadline.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_deliver_locally.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_domaingv.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_plist.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_xqos.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_ownip.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_config.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_typelib.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_entity.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_endpoint_match.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_participant.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_proxy_participant.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_topic.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_endpoint.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_proxy_endpoint.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_gc.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_pmd.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_protocol.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_addrset.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_feature_check.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_freelist.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_hbcontrol.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_inverse_uint32_set.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_lat_estim.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_lease.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_log.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_qosmatch.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_radmin.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_init.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_sockwaitset.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_thread.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_transmit.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_unused.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_whc.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_xevent.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_xmsg.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_lifespan.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_xt_typeinfo.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_xt_typelookup.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_xt_typemap.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_typewrap.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_typebuilder.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_dynamic_type.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"path" : "src/core/ddsi/include/dds/ddsi/ddsi_security_msg.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsc/src/dds_alloc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsc/src/dds_builtin.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsc/src/dds_coherent.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsc/src/dds_participant.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsc/src/dds_reader.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsc/src/dds_writer.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsc/src/dds_init.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsc/src/dds_publisher.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsc/src/dds_rhc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsc/src/dds_rhc_default.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsc/src/dds_domain.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsc/src/dds_instance.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsc/src/dds_qos.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsc/src/dds_handles.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsc/src/dds_entity.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsc/src/dds_matched.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsc/src/dds_querycond.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsc/src/dds_topic.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsc/src/dds_listener.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsc/src/dds_read.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsc/src/dds_waitset.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsc/src/dds_readcond.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsc/src/dds_guardcond.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsc/src/dds_statistics.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsc/src/dds_subscriber.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsc/src/dds_write.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsc/src/dds_whc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsc/src/dds_whc_builtintopic.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsc/src/dds_serdata_builtintopic.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsc/src/dds_sertype_builtintopic.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsc/src/dds_serdata_default.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsc/src/dds_sertype_default.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsc/src/dds_data_allocator.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsc/src/dds_loan.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 25,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/ddsc/src/dds_dynamic_type.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/src/dds__builtin.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/src/dds__domain.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/src/dds__handles.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/src/dds__entity.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/src/dds__init.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/src/dds__listener.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/src/dds__participant.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/src/dds__publisher.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/src/dds__qos.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/src/dds__readcond.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/src/dds__guardcond.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/src/dds__reader.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/src/dds__rhc_default.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/src/dds__statistics.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/src/dds__subscriber.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/src/dds__topic.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/src/dds__types.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/src/dds__write.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/src/dds__writer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/src/dds__whc.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/src/dds__whc_builtintopic.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/src/dds__serdata_builtintopic.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/src/dds__serdata_default.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/src/dds__get_status.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/src/dds__data_allocator.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/include/dds/dds.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/include/dds/ddsc/dds_public_error.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/include/dds/ddsc/dds_public_impl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/include/dds/ddsc/dds_public_listener.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/include/dds/ddsc/dds_public_qos.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/include/dds/ddsc/dds_public_qosdefs.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/include/dds/ddsc/dds_public_status.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/include/dds/ddsc/dds_statistics.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/include/dds/ddsc/dds_rhc.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/include/dds/ddsc/dds_internal_api.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/include/dds/ddsc/dds_opcodes.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/include/dds/ddsc/dds_data_allocator.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/include/dds/ddsc/dds_loan_api.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "src/core/ddsc/include/dds/ddsc/dds_public_dynamic_type.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 25,
+			"path" : "cmake-build-debug/src/core/include/dds/export.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 22,
+			"compileGroupIndex" : 0,
+			"path" : "src/security/core/src/dds_security_serialize.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 22,
+			"compileGroupIndex" : 0,
+			"path" : "src/security/core/src/dds_security_utils.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 22,
+			"compileGroupIndex" : 0,
+			"path" : "src/security/core/src/dds_security_plugins.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 22,
+			"compileGroupIndex" : 0,
+			"path" : "src/security/core/src/dds_security_shared_secret.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 22,
+			"compileGroupIndex" : 0,
+			"path" : "src/security/core/src/dds_security_fsm.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 22,
+			"compileGroupIndex" : 0,
+			"path" : "src/security/core/src/dds_security_timed_cb.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 22,
+			"path" : "src/security/core/include/dds/security/core/dds_security_fsm.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 22,
+			"path" : "src/security/core/include/dds/security/core/dds_security_plugins.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 22,
+			"path" : "src/security/core/include/dds/security/core/dds_security_serialize.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 22,
+			"path" : "src/security/core/include/dds/security/core/dds_security_timed_cb.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 22,
+			"path" : "src/security/core/include/dds/security/core/dds_security_types.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 22,
+			"path" : "src/security/core/include/dds/security/core/dds_security_utils.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 22,
+			"path" : "src/security/core/include/dds/security/core/dds_security_shared_secret.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "cmake-build-debug/src/ddsrt/include/dds/config.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/avl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/bits.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/fibheap.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/hopscotch.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/log.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/retcode.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/attributes.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/endian.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/arch.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/misc.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/mh3.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/io.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/process.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/sched.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/strtod.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/strtol.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/types.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/countargs.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/static_assert.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/circlist.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/atomics.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/atomics/arm.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/atomics/gcc.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/atomics/msvc.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/atomics/sun.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/dynlib.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/environ.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/heap.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/ifaddrs.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/md5.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/netstat.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/string.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/sockets.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/src/sockets_priv.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/threads.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/src/threads_priv.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/cdtors.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/random.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/align.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/sockets/windows.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/filesystem/windows.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/sync/windows.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/threads/windows.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "src/ddsrt/include/dds/ddsrt/types/windows.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "cmake-build-debug/src/ddsrt/include/dds/features.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"path" : "cmake-build-debug/src/ddsrt/include/dds/version.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/atomics.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/avl.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/bits.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/bswap.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/io.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/log.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/retcode.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/strtod.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/strtol.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/mh3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/environ.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/expand_vars.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/fibheap.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/hopscotch.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/circlist.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/threads.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/string.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/sockets.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/md5.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/xmlparser.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/ifaddrs.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/cdtors.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/random.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/time.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/ifaddrs/windows/ifaddrs.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/sockets/windows/socket.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/sockets/windows/gethostname.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/heap/posix/heap.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/dynlib/windows/dynlib.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/environ/windows/environ.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/filesystem/windows/filesystem.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/netstat/windows/netstat.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/process/windows/process.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/random/windows/random.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/rusage/windows/rusage.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/sync/windows/sync.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/threads/windows/threads.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "src/ddsrt/src/time/windows/time.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

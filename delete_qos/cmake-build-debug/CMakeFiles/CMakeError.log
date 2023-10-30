@@ -1,0 +1,132 @@
+Determining if the stpcpy exist failed with the following output:
+Change Dir: C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/clion/CLion 2022.1.2/bin/ninja/win/ninja.exe cmTC_fcc66 && [1/2] Building C object CMakeFiles/cmTC_fcc66.dir/CheckSymbolExists.c.obj
+FAILED: CMakeFiles/cmTC_fcc66.dir/CheckSymbolExists.c.obj 
+D:\clion\CLION2~1.2\bin\mingw\bin\gcc.exe   -std=gnu99 -o CMakeFiles/cmTC_fcc66.dir/CheckSymbolExists.c.obj -c C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: 'stpcpy' undeclared (first use in this function); did you mean 'strcpy'?
+    8 |   return ((int*)(&stpcpy))[argc];
+      |                   ^~~~~~
+      |                   strcpy
+C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+ninja: build stopped: subcommand failed.
+
+
+File C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef stpcpy
+  return ((int*)(&stpcpy))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strlcpy exist failed with the following output:
+Change Dir: C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/clion/CLion 2022.1.2/bin/ninja/win/ninja.exe cmTC_a58c5 && [1/2] Building C object CMakeFiles/cmTC_a58c5.dir/CheckSymbolExists.c.obj
+FAILED: CMakeFiles/cmTC_a58c5.dir/CheckSymbolExists.c.obj 
+D:\clion\CLION2~1.2\bin\mingw\bin\gcc.exe   -std=gnu99 -o CMakeFiles/cmTC_a58c5.dir/CheckSymbolExists.c.obj -c C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: 'strlcpy' undeclared (first use in this function); did you mean 'strncpy'?
+    8 |   return ((int*)(&strlcpy))[argc];
+      |                   ^~~~~~~
+      |                   strncpy
+C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+ninja: build stopped: subcommand failed.
+
+
+File C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strlcpy
+  return ((int*)(&strlcpy))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strlcat exist failed with the following output:
+Change Dir: C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/clion/CLion 2022.1.2/bin/ninja/win/ninja.exe cmTC_45ed0 && [1/2] Building C object CMakeFiles/cmTC_45ed0.dir/CheckSymbolExists.c.obj
+FAILED: CMakeFiles/cmTC_45ed0.dir/CheckSymbolExists.c.obj 
+D:\clion\CLION2~1.2\bin\mingw\bin\gcc.exe   -std=gnu99 -o CMakeFiles/cmTC_45ed0.dir/CheckSymbolExists.c.obj -c C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: 'strlcat' undeclared (first use in this function); did you mean 'strncat'?
+    8 |   return ((int*)(&strlcat))[argc];
+      |                   ^~~~~~~
+      |                   strncat
+C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+ninja: build stopped: subcommand failed.
+
+
+File C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strlcat
+  return ((int*)(&strlcat))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the gethostbyname_r exist failed with the following output:
+Change Dir: C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/clion/CLion 2022.1.2/bin/ninja/win/ninja.exe cmTC_b29aa && [1/2] Building C object CMakeFiles/cmTC_b29aa.dir/CheckSymbolExists.c.obj
+FAILED: CMakeFiles/cmTC_b29aa.dir/CheckSymbolExists.c.obj 
+D:\clion\CLION2~1.2\bin\mingw\bin\gcc.exe   -std=gnu99 -o CMakeFiles/cmTC_b29aa.dir/CheckSymbolExists.c.obj -c C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: 'gethostbyname_r' undeclared (first use in this function); did you mean 'gethostbyname'?
+    8 |   return ((int*)(&gethostbyname_r))[argc];
+      |                   ^~~~~~~~~~~~~~~
+      |                   gethostbyname
+C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+ninja: build stopped: subcommand failed.
+
+
+File C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <ws2tcpip.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef gethostbyname_r
+  return ((int*)(&gethostbyname_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+C compiler IPO check failed with the following output:
+Change Dir: C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/src/core/CMakeFiles/_CMakeLTOTest-C/bin
+
+Run Build Command(s):D:/clion/CLion 2022.1.2/bin/ninja/win/ninja.exe && [1/4] Building C object CMakeFiles/foo.dir/foo.c.obj
+FAILED: CMakeFiles/foo.dir/foo.c.obj 
+D:\clion\CLION2~1.2\bin\mingw\bin\gcc.exe   -flto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.c.obj -c C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/src/core/CMakeFiles/_CMakeLTOTest-C/src/foo.c
+cc1.exe: error: LTO support has not been enabled in this configuration
+cc1.exe: error: '-fno-fat-lto-objects' are supported only with linker plugin
+[2/4] Building C object CMakeFiles/boo.dir/main.c.obj
+FAILED: CMakeFiles/boo.dir/main.c.obj 
+D:\clion\CLION2~1.2\bin\mingw\bin\gcc.exe   -flto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.c.obj -c C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug/src/core/CMakeFiles/_CMakeLTOTest-C/src/main.c
+cc1.exe: error: LTO support has not been enabled in this configuration
+cc1.exe: error: '-fno-fat-lto-objects' are supported only with linker plugin
+ninja: build stopped: subcommand failed.
+
+

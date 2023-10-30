@@ -1,0 +1,58 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"src/security/builtin_plugins/cryptographic/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 58,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "lib",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libdds_security_crypto.dll.a"
+			],
+			"targetId" : "dds_security_crypto::@65327fdebd6645eddc6f",
+			"targetIndex" : 4,
+			"targetIsImportLibrary" : true,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "lib",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"bin/dds_security_crypto.dll"
+			],
+			"targetId" : "dds_security_crypto::@65327fdebd6645eddc6f",
+			"targetIndex" : 4,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src/security/builtin_plugins/cryptographic",
+		"source" : "src/security/builtin_plugins/cryptographic"
+	}
+}

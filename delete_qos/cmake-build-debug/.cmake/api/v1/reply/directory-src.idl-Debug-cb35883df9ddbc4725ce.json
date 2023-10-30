@@ -1,0 +1,75 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"src/idl/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 173,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 181,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "dev",
+			"destination" : "include",
+			"paths" : 
+			[
+				"src/idl/include/idl",
+				"cmake-build-debug/src/idl/include/idl"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "lib",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libcycloneddsidl.dll.a"
+			],
+			"targetId" : "idl::@9758f91cb286db83927d",
+			"targetIndex" : 9,
+			"targetIsImportLibrary" : true,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "lib",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"bin/cycloneddsidl.dll"
+			],
+			"targetId" : "idl::@9758f91cb286db83927d",
+			"targetIndex" : 9,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src/idl",
+		"source" : "src/idl"
+	}
+}

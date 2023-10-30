@@ -1,0 +1,9 @@
+module testData
+{
+  struct Msg
+  {
+    @key
+    long userID;
+    string message;
+  };
+};
