@@ -41,6 +41,19 @@ delete "src/core/ddsi/src/ddsi_plist.c"
 line 2012 QP  (DEADLINE,  deadline, XD),
 line 2013 QP  (LATENCY_BUDGET, latency_budget, XD),
 
+delete "src/core/ddsi/src/ddsi_qosmatch.c"
+line 186   if ((mask & DDSI_QP_DEADLINE) && rd_qos->deadline.deadline < wr_qos->deadline.deadline) {
+    *reason = DDS_DEADLINE_QOS_POLICY_ID;
+    return false;
+  }
+  if ((mask & DDSI_QP_LATENCY_BUDGET) && rd_qos->latency_budget.duration < wr_qos->latency_budget.duration) {
+    *reason = DDS_LATENCYBUDGET_QOS_POLICY_ID;
+    return false;
+  }
+
+delete "src/core/ddsc/src/dds_rhc_default.c"
+line 585 rhc->deadline.dur = (reader != NULL) ? reader->m_entity.m_qos->deadline.deadline : DDS_INFINITY;
+
 
 
 
@@ -73,6 +86,7 @@ line 193   if ((mask & DDSI_QP_OWNERSHIP) && rd_qos->ownership.kind != wr_qos->o
     *reason = DDS_OWNERSHIP_QOS_POLICY_ID;
     return false;
   }
+  
 delete "src/core/ddsc/src/dds_rhc_default.c"
 line 614 rhc->exclusive_ownership = (qos->ownership.kind == DDS_OWNERSHIP_EXCLUSIVE);
 
