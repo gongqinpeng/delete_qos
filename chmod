@@ -1,0 +1,6 @@
+cd examples
+cd roundtrip
+mkdir build
+cd build
+cmake -DCMAKE_PREFIX_PATH=/usr/womensan/cyclonedds ..
+make

@@ -1,0 +1,453 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d7e0827eb0fd640335dd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "compat",
+					"jsonFile" : "directory-compat-Debug-55fc01149e572817d97b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "compat",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "src",
+					"childIndexes" : 
+					[
+						3,
+						8,
+						9,
+						10,
+						18
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src-Debug-c94b7c2814d5a21df52c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src"
+				},
+				{
+					"build" : "src/tools",
+					"childIndexes" : 
+					[
+						4,
+						5,
+						6,
+						7
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.tools-Debug-6378c871003aae0b054d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "src/tools"
+				},
+				{
+					"build" : "src/tools/_confgen",
+					"jsonFile" : "directory-src.tools._confgen-Debug-6f29bca06e8ccf32de78.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 0,
+					"source" : "src/tools/_confgen",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "src/tools/idlpp",
+					"jsonFile" : "directory-src.tools.idlpp-Debug-82e6b0422a4d0985b56f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 0,
+					"source" : "src/tools/idlpp",
+					"targetIndexes" : 
+					[
+						11
+					]
+				},
+				{
+					"build" : "src/tools/idlc",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.tools.idlc-Debug-0b4f0e69194c9f12f73b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 0,
+					"source" : "src/tools/idlc",
+					"targetIndexes" : 
+					[
+						10
+					]
+				},
+				{
+					"build" : "src/tools/ddsperf",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.tools.ddsperf-Debug-7b68d515028b1dbc174f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 0,
+					"source" : "src/tools/ddsperf",
+					"targetIndexes" : 
+					[
+						6,
+						7
+					]
+				},
+				{
+					"build" : "src/ddsrt",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.ddsrt-Debug-9e85ee40d642dabfde96.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "src/ddsrt",
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"build" : "src/idl",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.idl-Debug-cb35883df9ddbc4725ce.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "src/idl",
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"build" : "src/security",
+					"childIndexes" : 
+					[
+						11,
+						12,
+						13,
+						14
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.security-Debug-ddf32810b88ddf9fb834.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "src/security"
+				},
+				{
+					"build" : "src/security/api",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.security.api-Debug-ba8203b6c8c4c22a0c6b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 10,
+					"projectIndex" : 0,
+					"source" : "src/security/api"
+				},
+				{
+					"build" : "src/security/core",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.security.core-Debug-8de68829d4394ccd26ed.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 10,
+					"projectIndex" : 0,
+					"source" : "src/security/core"
+				},
+				{
+					"build" : "src/security/openssl",
+					"jsonFile" : "directory-src.security.openssl-Debug-73d1bb9eee22e09876e5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 10,
+					"projectIndex" : 0,
+					"source" : "src/security/openssl"
+				},
+				{
+					"build" : "src/security/builtin_plugins",
+					"childIndexes" : 
+					[
+						15,
+						16,
+						17
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.security.builtin_plugins-Debug-80a005fb2447f9e54f05.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 10,
+					"projectIndex" : 0,
+					"source" : "src/security/builtin_plugins"
+				},
+				{
+					"build" : "src/security/builtin_plugins/access_control",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.security.builtin_plugins.access_control-Debug-06954b875f1242ec9940.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 14,
+					"projectIndex" : 0,
+					"source" : "src/security/builtin_plugins/access_control",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "src/security/builtin_plugins/authentication",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.security.builtin_plugins.authentication-Debug-840c046f3231b197d6c6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 14,
+					"projectIndex" : 0,
+					"source" : "src/security/builtin_plugins/authentication",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "src/security/builtin_plugins/cryptographic",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.security.builtin_plugins.cryptographic-Debug-9707d6d324c37a9e353b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 14,
+					"projectIndex" : 0,
+					"source" : "src/security/builtin_plugins/cryptographic",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "src/core",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.core-Debug-bebd3f5c4763b0e086b8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "src/core",
+					"targetIndexes" : 
+					[
+						5
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					],
+					"name" : "CycloneDDS",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 4,
+					"id" : "_confgen::@86bd84294e37de3b26dd",
+					"jsonFile" : "target-_confgen-Debug-f9f6a516374ca681319e.json",
+					"name" : "_confgen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "compat::@f6fa9a3157c65bf48407",
+					"jsonFile" : "target-compat-Debug-b4594a4bb4efa380e323.json",
+					"name" : "compat",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 15,
+					"id" : "dds_security_ac::@6080d0fdc0362ac2969e",
+					"jsonFile" : "target-dds_security_ac-Debug-9c4c23c447a6948b1e6c.json",
+					"name" : "dds_security_ac",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 16,
+					"id" : "dds_security_auth::@44f4a207a407bdfb6296",
+					"jsonFile" : "target-dds_security_auth-Debug-db27646f4fcca12b5780.json",
+					"name" : "dds_security_auth",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 17,
+					"id" : "dds_security_crypto::@65327fdebd6645eddc6f",
+					"jsonFile" : "target-dds_security_crypto-Debug-df28c1724ea542999e90.json",
+					"name" : "dds_security_crypto",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 18,
+					"id" : "ddsc::@0618756b1ff51bca1a0e",
+					"jsonFile" : "target-ddsc-Debug-01d3e4f7868b35084f8e.json",
+					"name" : "ddsc",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "ddsperf::@be032fb3939365f9cef4",
+					"jsonFile" : "target-ddsperf-Debug-72f464a0629d7f8487eb.json",
+					"name" : "ddsperf",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "ddsperf_types_generate::@be032fb3939365f9cef4",
+					"jsonFile" : "target-ddsperf_types_generate-Debug-f54eea3ae46f9e2e1c92.json",
+					"name" : "ddsperf_types_generate",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "ddsrt-internal::@af3c6e3ba71b88c74f0c",
+					"jsonFile" : "target-ddsrt-internal-Debug-b0c6a014425f6ce92320.json",
+					"name" : "ddsrt-internal",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "idl::@9758f91cb286db83927d",
+					"jsonFile" : "target-idl-Debug-fedecdf2acaeb472c044.json",
+					"name" : "idl",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "idlc::@625b227910ee9b8034af",
+					"jsonFile" : "target-idlc-Debug-f7138e4d01387dc9ba1f.json",
+					"name" : "idlc",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "idlpp::@5f60215986d36dd05b1b",
+					"jsonFile" : "target-idlpp-Debug-bf5716c0bb50c36a666c.json",
+					"name" : "idlpp",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Administrator/CLionProjects/delete_data_qos/cmake-build-debug",
+		"source" : "C:/Users/Administrator/CLionProjects/delete_data_qos"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

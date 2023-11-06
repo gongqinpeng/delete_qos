@@ -1,0 +1,29 @@
+"D:\clion\CLion 2022.1.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=D:/clion/CLion 2022.1.2/bin/ninja/win/ninja.exe" -G Ninja -S C:\Users\Administrator\CLionProjects\delete_data_qos -B C:\Users\Administrator\CLionProjects\delete_data_qos\cmake-build-debug
+-- Building with OpenSSL support
+-- Configuring done
+CMake Error at src/tools/idlc/CMakeLists.txt:41 (target_include_directories):
+  Error evaluating generator expression:
+
+    $<TARGET_PROPERTY:security_api,INTERFACE_INCLUDE_DIRECTORIES>
+
+  Target "security_api" not found.
+
+
+CMake Error at src/tools/ddsperf/CMakeLists.txt:22 (target_link_libraries):
+  Error evaluating generator expression:
+
+    $<TARGET_PROPERTY:security_api,INTERFACE_INCLUDE_DIRECTORIES>
+
+  Target "security_api" not found.
+
+
+CMake Error at src/core/CMakeLists.txt:60 (target_include_directories):
+  Error evaluating generator expression:
+
+    $<TARGET_PROPERTY:security_api,INTERFACE_INCLUDE_DIRECTORIES>
+
+  Target "security_api" not found.
+
+
+-- Generating done
+CMake Generate step failed.  Build files cannot be regenerated correctly.

@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/symbol_export_test.dir/symbol_export.c.o -o ../../../../bin/symbol_export_test  -Wl,-rpath,/tmp/tmp.HQHvTfC8u2/cmake-build-debug/lib ../../../../lib/libddsc.so.0.11.0 
