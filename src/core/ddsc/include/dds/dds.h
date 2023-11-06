@@ -1683,11 +1683,11 @@ struct dds_topic_filter {
  * @retval DDS_RETCODE_OK  Filter set successfully
  * @retval DDS_RETCODE_BAD_PARAMETER  The topic handle is invalid
 */
-DDS_EXPORT dds_return_t
-dds_set_topic_filter_and_arg(
-  dds_entity_t topic,
-  dds_topic_filter_arg_fn filter,
-  void *arg);
+//DDS_EXPORT dds_return_t
+//dds_set_topic_filter_and_arg(
+//  dds_entity_t topic,
+//  dds_topic_filter_arg_fn filter,
+//  void *arg);
 
 /**
  * @anchor dds_set_topic_filter_extended
@@ -1710,10 +1710,10 @@ dds_set_topic_filter_and_arg(
  * @retval DDS_RETCODE_OK  Filter set successfully
  * @retval DDS_RETCODE_BAD_PARAMETER  The topic handle is invalid
 */
-DDS_EXPORT dds_return_t
-dds_set_topic_filter_extended(
-  dds_entity_t topic,
-  const struct dds_topic_filter *filter);
+//DDS_EXPORT dds_return_t
+//dds_set_topic_filter_extended(
+//  dds_entity_t topic,
+//  const struct dds_topic_filter *filter);
 
 /**
  * @brief Gets the filter for a topic.
@@ -1731,11 +1731,11 @@ dds_set_topic_filter_extended(
  * @retval DDS_RETCODE_PRECONDITION_NOT_MET  Filter is not of "none" or "sample_arg"
  * @retval DDS_RETCODE_BAD_PARAMETER  The topic handle is invalid
  */
-DDS_EXPORT dds_return_t
-dds_get_topic_filter_and_arg (
-  dds_entity_t topic,
-  dds_topic_filter_arg_fn *fn,
-  void **arg);
+//DDS_EXPORT dds_return_t
+//dds_get_topic_filter_and_arg (
+//  dds_entity_t topic,
+//  dds_topic_filter_arg_fn *fn,
+//  void **arg);
 
 /**
  * @brief Gets the filter for a topic.
@@ -1751,10 +1751,10 @@ dds_get_topic_filter_and_arg (
  * @retval DDS_RETCODE_OK  Filter set successfully
  * @retval DDS_RETCODE_BAD_PARAMETER  The topic handle is invalid
  */
-DDS_EXPORT dds_return_t
-dds_get_topic_filter_extended (
-  dds_entity_t topic,
-  struct dds_topic_filter *filter);
+//DDS_EXPORT dds_return_t
+//dds_get_topic_filter_extended (
+//  dds_entity_t topic,
+//  struct dds_topic_filter *filter);
 
 /**
  * @defgroup subscriber (Subscriber)
