@@ -1,0 +1,306 @@
+# delete_qos
+
+---
+ CMakeLists.txt                              | 10 +++---
+ src/CMakeLists.txt                          |  2 +-
+ src/core/ddsi/src/q_sockwaitset.c           |  5 +--
+ src/core/ddsi/src/q_thread.c                |  3 +-
+ src/ddsrt/include/dds/ddsrt/threads/posix.h |  3 +-
+ src/ddsrt/include/dds/ddsrt/time.h          |  1 +
+ src/ddsrt/src/sockets/posix/gethostname.c   |  1 +
+ src/ddsrt/src/threads/posix/threads.c       |  6 ++--
+ src/idl/src/string.c                        | 35 +++++++++++++++++++--
+ src/tools/CMakeLists.txt                    |  4 +--
+ 10 files changed, 53 insertions(+), 17 deletions(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 837d982c..519046fb 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -26,7 +26,7 @@ endif()
+ if(CMAKE_CROSSCOMPILING)
+   set(not_crosscompiling OFF)
+ else()
+-  set(not_crosscompiling ON)
++  set(not_crosscompiling OFF)
+ endif()
+ 
+ # By default don't treat warnings as errors, else anyone building it with a different compiler that
+@@ -36,12 +36,14 @@ option(WERROR "Treat compiler warnings as errors" OFF)
+ 
+ set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake/Modules")
+ 
+-option(BUILD_IDLC "Build IDL preprocessor" ${not_crosscompiling})
+-option(BUILD_DDSPERF "Build ddsperf tool" ${not_crosscompiling})
++option(BUILD_IDLC "Build IDL preprocessor" OFF)
++option(BUILD_DDSPERF "Build ddsperf tool" OFF)
+ 
+ set(CMAKE_C_STANDARD 99)
+ if(CMAKE_SYSTEM_NAME STREQUAL "VxWorks")
+-  add_definitions(-std=c99)
++  set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} -lcplusplus -lllvmcplus -lssl -lcrypto")
++  set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wl,-lcplusplus -Wl,-lllvmcplus -Wl,-lssl -Wl,-lcrypto")
++  #  add_definitions(-std=c99)
+ endif()
+ 
+ if(${CMAKE_C_COMPILER_ID} STREQUAL "SunPro")
+diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
+index fa08094a..33252e0e 100644
+--- a/src/CMakeLists.txt
++++ b/src/CMakeLists.txt
+@@ -73,7 +73,7 @@ endif()
+ #
+ # Historically the option was DDSC_ENABLE_OPENSSL so make some allowance for those who are
+ # currently relying on it.
+-set(ENABLE_SSL "AUTO" CACHE STRING "Enable OpenSSL support")
++set(ENABLE_SSL "OFF" CACHE STRING "Enable OpenSSL support")
+ set_property(CACHE ENABLE_SSL PROPERTY STRINGS ON OFF AUTO)
+ if(ENABLE_SSL)
+   if(NOT ENABLE_SSL STREQUAL "AUTO")
+diff --git a/src/core/ddsi/src/q_sockwaitset.c b/src/core/ddsi/src/q_sockwaitset.c
+index b5e4c221..0bd8153b 100644
+--- a/src/core/ddsi/src/q_sockwaitset.c
++++ b/src/core/ddsi/src/q_sockwaitset.c
+@@ -583,13 +583,14 @@ fail:
+   return -1;
+ }
+ #elif defined(__VXWORKS__)
++#include <errnoLib.h>
+ static int make_pipe (int pfd[2])
+ {
+   char pipename[OSPL_PIPENAMESIZE];
+-  int pipecount = 0;
++  int pipecount = 0, result;
+   do {
+     snprintf ((char*)&pipename, sizeof (pipename), "/pipe/ospl%d", pipecount++);
+-  } while ((result = pipeDevCreate ((char*)&pipename, 1, 1)) == -1 && os_getErrno() == EINVAL);
++  } while ((result = pipeDevCreate ((char*)&pipename, 1, 1)) == -1 && errnoGet() == EINVAL);
+   if (result == -1)
+     goto fail_pipedev;
+   if ((pfd[0] = open ((char*)&pipename, O_RDWR, 0644)) == -1)
+diff --git a/src/core/ddsi/src/q_thread.c b/src/core/ddsi/src/q_thread.c
+index 331ae70e..7b36f606 100644
+--- a/src/core/ddsi/src/q_thread.c
++++ b/src/core/ddsi/src/q_thread.c
+@@ -27,6 +27,7 @@
+ #include "dds/ddsi/ddsi_config_impl.h"
+ #include "dds/ddsi/ddsi_domaingv.h"
+ #include "dds/ddsi/sysdeps.h"
++#include "dds/ddsrt/threads/posix.h"
+ 
+ struct thread_states thread_states;
+ ddsrt_thread_local struct thread_state *tsd_thread_state;
+@@ -248,7 +249,7 @@ static uint32_t create_thread_wrapper (void *ptr)
+   struct thread_state * const thrst = ptr;
+   struct ddsi_domaingv const * const gv = ddsrt_atomic_ldvoidp (&thrst->gv);
+   if (gv)
+-    GVTRACE ("started new thread %"PRIdTID": %s\n", ddsrt_gettid (), thrst->name);
++    GVTRACE ("started new thread %u: %s\n", ddsrt_gettid (), thrst->name);
+   assert (thrst->state == THREAD_STATE_INIT);
+   tsd_thread_state = thrst;
+   ddsrt_mutex_lock (&thread_states.lock);
+diff --git a/src/ddsrt/include/dds/ddsrt/threads/posix.h b/src/ddsrt/include/dds/ddsrt/threads/posix.h
+index af3b7f66..70f19b0e 100644
+--- a/src/ddsrt/include/dds/ddsrt/threads/posix.h
++++ b/src/ddsrt/include/dds/ddsrt/threads/posix.h
+@@ -16,6 +16,7 @@
+ 
+ #if defined(__VXWORKS__)
+ #define DDSRT_HAVE_THREAD_SETNAME (0)
++#include <inttypes.h>
+ #else
+ #define DDSRT_HAVE_THREAD_SETNAME (1)
+ #endif
+@@ -51,7 +52,7 @@ typedef uint32_t ddsrt_thread_list_id_t;
+ /* TODO: Verify taskIdSelf is the right function to use on VxWorks */
+ typedef TASK_ID ddsrt_tid_t;
+ # if defined(_WRS_CONFIG_LP64)
+-#   define PRIdPID PRIuPTR /* typedef struct windTcb *TASK_ID */
++#   define PRIdPID "u" /* typedef struct windTcb *TASK_ID */
+ # else
+ #   define PRIdPID "d" /* typedef int TASK_ID */
+ # endif
+diff --git a/src/ddsrt/include/dds/ddsrt/time.h b/src/ddsrt/include/dds/ddsrt/time.h
+index f64ed503..620a6f05 100644
+--- a/src/ddsrt/include/dds/ddsrt/time.h
++++ b/src/ddsrt/include/dds/ddsrt/time.h
+@@ -21,6 +21,7 @@
+ #define DDS_TIME_H
+ 
+ #include <stdint.h>
++#include <stddef.h>
+ #include <assert.h>
+ 
+ #include "dds/export.h"
+diff --git a/src/ddsrt/src/sockets/posix/gethostname.c b/src/ddsrt/src/sockets/posix/gethostname.c
+index 907942c5..48d36dc2 100644
+--- a/src/ddsrt/src/sockets/posix/gethostname.c
++++ b/src/ddsrt/src/sockets/posix/gethostname.c
+@@ -12,6 +12,7 @@
+ #include <assert.h>
+ #include <limits.h>
+ #include <string.h>
++#include <unistd.h>
+ 
+ #include "dds/ddsrt/sockets.h"
+ #include "dds/ddsrt/string.h"
+diff --git a/src/ddsrt/src/threads/posix/threads.c b/src/ddsrt/src/threads/posix/threads.c
+index 0191ec46..a98fee92 100644
+--- a/src/ddsrt/src/threads/posix/threads.c
++++ b/src/ddsrt/src/threads/posix/threads.c
+@@ -121,7 +121,7 @@ ddsrt_thread_getname(char *str, size_t size)
+      supported or the thread name is empty. */
+   if (cnt == 0) {
+     ddsrt_tid_t tid = ddsrt_gettid();
+-    cnt = (size_t)snprintf(str, size, "%"PRIdTID, tid);
++    cnt = (size_t)snprintf(str, size, "%u", tid);
+   }
+ 
+   return cnt;
+@@ -199,12 +199,12 @@ static void *os_startRoutineWrapper (void *threadContext)
+ 
+   /* Note that any possible errors raised here are not terminal since the
+      thread may have exited at this point anyway. */
+-  if (pthread_getschedparam(thread.v, &policy, &sched_param) == 0) {
++/*  if (pthread_getschedparam(thread.v, &policy, &sched_param) == 0) {
+     max = sched_get_priority_max(policy);
+     if (max != -1) {
+       (void)pthread_setschedprio(thread.v, max);
+     }
+-  }
++  }*/
+ #endif
+ 
+   /* return the result of the user routine */
+diff --git a/src/idl/src/string.c b/src/idl/src/string.c
+index 26e8e4cb..b573f9d4 100644
+--- a/src/idl/src/string.c
++++ b/src/idl/src/string.c
+@@ -55,7 +55,7 @@ typedef _locale_t locale_t;
+ 
+ #include "idl/stream.h"
+ #include "idl/string.h"
+-
++typedef int locale_t;
+ static locale_t posix_locale(void);
+ 
+ #if _WIN32
+@@ -71,6 +71,19 @@ int idl_isspace(int c) { return _isspace_l(c, posix_locale()); }
+ int idl_isupper(int c) { return _isupper_l(c, posix_locale()); }
+ int idl_toupper(int c) { return _toupper_l(c, posix_locale()); }
+ int idl_tolower(int c) { return _tolower_l(c, posix_locale()); }
++#elif defined(__VXWORKS__)
++int idl_isalnum(int c) { return isalnum(c); }
++int idl_isalpha(int c) { return isalpha(c); }
++int idl_isblank(int c) { return isblank(c); }
++int idl_iscntrl(int c) { return iscntrl(c); }
++int idl_isgraph(int c) { return isgraph(c); }
++int idl_islower(int c) { return islower(c); }
++int idl_isprint(int c) { return isprint(c); }
++int idl_ispunct(int c) { return ispunct(c); }
++int idl_isspace(int c) { return isspace(c); }
++int idl_isupper(int c) { return isupper(c); }
++int idl_toupper(int c) { return toupper(c); }
++int idl_tolower(int c) { return tolower(c); }
+ #else
+ int idl_isalnum(int c) { return isalnum_l(c, posix_locale()); }
+ int idl_isalpha(int c) { return isalpha_l(c, posix_locale()); }
+@@ -105,6 +118,8 @@ int idl_strcasecmp(const char *s1, const char *s2)
+   assert(s2);
+ #if _WIN32
+   return _stricmp_l(s1, s2, posix_locale());
++#elif __VXWORKS__
++  return strcasecmp(s1, s2);
+ #else
+   return strcasecmp_l(s1, s2, posix_locale());
+ #endif
+@@ -116,6 +131,8 @@ int idl_strncasecmp(const char *s1, const char *s2, size_t n)
+   assert(s2);
+ #if _WIN32
+   return _strnicmp_l(s1, s2, n, posix_locale());
++#elif __VXWORKS__
++  return strcasecmp(s1, s2);
+ #else
+   return strncasecmp_l(s1, s2, n, posix_locale());
+ #endif
+@@ -182,6 +199,8 @@ __pragma(warning(disable: 4996))
+ #if _MSC_VER
+ __pragma(warning(pop))
+ #endif
++#elif __VXWORKS__
++  return vsnprintf(str, size, fmt, ap);
+ #elif __APPLE__ || __FreeBSD__
+   return vsnprintf_l(str, size, posix_locale(), fmt, ap);
+ #else
+@@ -280,6 +299,8 @@ unsigned long long idl_strtoull(const char *str, char **endptr, int base)
+ #else
+   return _strtoull_l(str, endptr, base, posix_locale());
+ #endif
++#elif __VXWORKS__
++  return strtoull(str, endptr, base);
+ #else
+   return strtoull_l(str, endptr, base, posix_locale());
+ #endif
+@@ -294,6 +315,8 @@ long double idl_strtold(const char *str, char **endptr)
+ #else
+   return _strtold_l(str, endptr, posix_locale());
+ #endif
++#elif __VXWORKS__
++  return strtold(str, endptr);
+ #else
+   return strtold_l(str, endptr, posix_locale());
+ #endif
+@@ -319,6 +342,8 @@ int idl_vfprintf(FILE *fp, const char *fmt, va_list ap)
+   return _vfprintf_p_l(fp, fmt, posix_locale(), ap);
+ #elif __APPLE__ || __FreeBSD__
+   return vfprintf_l(fp, posix_locale(), fmt, ap);
++#elif __VXWORKS__
++  return vfprintf(fp, fmt, ap);
+ #else
+   int ret;
+   locale_t loc, posixloc = posix_locale();
+@@ -444,7 +469,10 @@ static pthread_once_t once = PTHREAD_ONCE_INIT;
+ 
+ static void free_locale(void *ptr)
+ {
++#if __VXWORKS__
++#else
+   freelocale((locale_t)ptr);
++#endif
+ }
+ 
+ static void make_key(void)
+@@ -456,14 +484,15 @@ static locale_t posix_locale(void)
+ {
+   locale_t locale;
+   (void)pthread_once(&once, make_key);
+-  if ((locale = pthread_getspecific(key)))
++  if ((locale = (locale_t)pthread_getspecific(key)))
+     return locale;
+ #if __APPLE__ || __FreeBSD__
+   locale = newlocale(LC_ALL_MASK, NULL, NULL);
++#elif __VXWORKS__
+ #else
+   locale = newlocale(LC_ALL, "C", (locale_t)0);
+ #endif
+-  pthread_setspecific(key, locale);
++  pthread_setspecific(key, (void *)locale);
+   return locale;
+ }
+ #endif /* _WIN32 */
+diff --git a/src/tools/CMakeLists.txt b/src/tools/CMakeLists.txt
+index 547515e0..99441603 100644
+--- a/src/tools/CMakeLists.txt
++++ b/src/tools/CMakeLists.txt
+@@ -14,7 +14,7 @@ set(CMAKE_INSTALL_TOOLSDIR "${CMAKE_INSTALL_DATADIR}/${PROJECT_NAME}/tools")
+ 
+ add_subdirectory(_confgen)
+ if(BUILD_IDLC)
+-  add_subdirectory(idlpp)
+-  add_subdirectory(idlc)
++	#  add_subdirectory(idlpp)
++	#  add_subdirectory(idlc)
+ endif()
+ add_subdirectory(ddsperf)
+-- 
+2.34.1
